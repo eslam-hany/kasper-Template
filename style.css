@@ -1,0 +1,635 @@
+:root{
+    --main-color:#19c8fa;
+    --secondery-color:#777;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "work sans", "sans-serif";
+}
+/*-----------------------------------------------START landing bage-----------------------------------------------*/
+
+/*-----------------------------------------------START main-titles-----------------------------------------------*/
+
+.main-titles{
+    width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 150px;
+}
+.main-titles h1{
+    margin-top: 150px;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    position: relative;
+    font-weight: normal;
+   
+}
+.main-titles h1::before{
+    content: " ";
+    width: 150px;
+    height: 2px;
+    text-align: center;
+    background-color: #333;
+    color: #333;
+    position: absolute;
+    margin-top: 60px;   
+}
+.main-titles h1::after{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: -90px;
+}
+.main-titles p{
+    text-align: center;
+    color: var(--secondery-color);
+    font-weight: 500;
+    margin-top: 60px;
+}
+/*-----------------------------------------------END main-titles-----------------------------------------------*/
+.landing-bage{
+    background-image: url("images/cover.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.landing-bage .header .logo{
+    padding: 30px;
+    margin-left: 60px;
+  cursor: pointer;
+    display: inline-block;
+}
+.links{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 40px;
+}
+.list{
+    display: inline-block;
+    color: white;
+    padding-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.list:hover{
+    display: inline-block;
+    color: white;
+    padding-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 0.2s;
+}
+.active{
+    margin-left: 450px;
+    color: var(--main-color);
+}
+.list:last-child::after{
+    content: " ";
+    height: 30px;
+    width: 2.5px;
+    background-color: white;
+    position: absolute;
+    margin-left: 45px;
+}
+.landing-bage .header .fas{
+    font-size: 30px;
+    color: white;
+    margin-left: 50px;
+    padding-top: 45px;
+    cursor: pointer;
+      display: inline-block;
+      position: absolute;
+}
+.landing-bage hr{
+    width: 75%;
+    border-color: var(--main-color);
+    margin-top: -20px;
+}
+
+.over-lay{
+    width: 650px;
+    height: 350px;
+    background-color:rgb(0 199 252 /50%);
+    position: absolute;
+    margin-top: 100px;
+}
+.over-lay .intro-text{
+    padding: 50px;
+    color: white;
+    position: absolute;
+    font-weight: bolder;
+    display: inline-block;
+}
+.over-lay .intro-text p{
+    font-weight: 300;
+}
+.over-lay .fas:first-child{
+    color: white;
+    margin-top: 175px;
+    display: inline-block;
+    font-size: 30px;
+}
+.landing-bage .fas:last-child{
+    color: white;
+    margin-top: 45vh;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 98%;
+}
+.landing-bage .foot{
+   margin-top: 170px;
+    text-align: center;
+    font-size: 25px;
+}
+.landing-bage .foot .fas{
+    color: var(--main-color);
+}
+ 
+/*-----------------------------------------------END landing bage-------------------------------------------------*/
+
+
+/*-----------------------------------------------START SERVICES-----------------------------------------------*/
+.SERVICES .container .row .col-6 .fas{
+    color: black;
+    font-size: 50px;    
+}
+.SERVICES .container .row .col-6 h1{
+    color: var(--main-color);
+  margin-left: 90px;
+  margin-top: -60px;
+    
+}
+.SERVICES .container .row .col-6 p{
+    color: var(--secondery-color);
+    display: inline-block;
+    margin-left: 85px;
+    margin-bottom: 100px;
+}
+.DESIGN{
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/images.jpg");
+    background-size: cover;
+    margin-bottom: 100px;
+    position: relative;
+}
+.DESIGN .mobile{
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 100px;
+   overflow-y: hidden;
+}
+.DESIGN .over-lay{
+    height: 50vh;
+    width: 50%;
+    background-color:rgb(0 199 252 /50%);
+    position: absolute;
+    right: 0;
+    color: white;
+    display: inline-block;
+}
+.DESIGN .over-lay h1{
+    padding-left: 100px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.DESIGN .over-lay ul{
+    list-style: none;
+    padding-left: 100px;
+    
+}
+.DESIGN .over-lay ul li .fas:first-child{
+    margin-top: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+      
+}
+.test{
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    
+    padding: 15px;
+    border-radius: 50px;
+    border:solid gray;
+}
+
+
+/*-----------------------------------------------END SERVICES-------------------------------------------------*/
+
+
+/*-----------------------------------------------START PORTFOLIO-----------------------------------------------*/
+
+
+.skills{
+    list-style: none;
+    display: inline-block;
+}
+.skills .skill{
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+
+}
+.skills  .active{
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    color: black;
+    background-color: var(--main-color);
+    margin-left: 520px;
+    
+
+}
+.skills .skill:hover{
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    cursor: pointer;
+    background-color: var(--main-color);
+
+}
+.PORTFOLIO .photos .container-fluid .row .col-3 .box{
+    position: relative;
+    overflow: hidden;
+}
+.PORTFOLIO .photos .container-fluid .row .col-3 .caption{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 1s;
+    bottom: -100%;
+    height: 85px;
+}
+.PORTFOLIO .photos .container-fluid .row .col-3 .caption h4{
+    font-weight: normal;
+}
+.PORTFOLIO .photos .container-fluid .row .col-3 .caption p{
+    color: var(--main-color);
+}
+.PORTFOLIO .photos .container-fluid .row .col-3 .box:hover .caption{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 1s;
+    bottom: 0;
+}
+.PORTFOLIO .photos .container-fluid .row .col-3 .box:hover img{
+   transform: rotate(1deg) scale(1.1);
+    transition: 1s;
+    
+}
+.PORTFOLIO .photos .container-fluid .row .col-3 img{
+    padding-top: 25px;
+       width: 100%;
+       transition: 1s;
+        
+    }
+.PORTFOLIO .more{
+   margin-left: 610px;
+ margin-top: 80px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    background-color: var(--main-color);
+    width: 120px;
+   cursor: pointer;
+   border-radius: 5px;
+   
+}
+.video-lay{
+    position: relative;
+    margin-top: 100px;
+}
+.PORTFOLIO .lay .one-lay{
+    width: 100%;
+    height: 200px;
+    background-color:rgb(0 199 252 /50%);
+   margin-top: -550px;
+    position: absolute;
+}
+.one-lay h1{
+    text-align: center;
+    color: white;
+}
+.one-lay p{
+    text-align: center;
+    color: white;
+}
+.one-lay button{
+    margin-left: 46%;
+    background-color: black;
+}
+
+
+
+/*-----------------------------------------------END PORTFOLIO-------------------------------------------------*/
+
+
+/*-----------------------------------------------START ABOUT US-----------------------------------------------*/
+
+ .about-photo{
+  margin-left: 300px;
+  z-index: 0;
+ 
+}
+.about{
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/images.jpg");
+    background-size: cover;
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: -150px;
+    z-index: 2;
+}
+.about .nums{
+    height: 50vh;
+    width: 80%;
+    background-color: #156278;
+    position: absolute;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    color: white;
+    display: inline-block;
+}
+.nums .icons{
+    list-style: none;
+   text-align: center;
+ margin-top: 5vh;
+}
+.nums .icons .icon{
+    display: inline-block;
+    padding: 60px;
+}
+.nums .icons .icon h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.nums .icons .icon i{
+   color: white;
+   padding: 10px;
+   background-color: black;
+   border-radius: 100%;
+}
+.ABOUT-US .container .row .col-6 h1{
+    text-align: center;
+    font-weight: 300;
+}
+.ABOUT-US .container .row .col-6 p{
+    text-align: center;
+    color: var(--secondery-color);
+    margin-bottom: 50px;
+}
+.ABOUT-US .container .row .col-6 .photo-skill{
+    border-radius: 100%;
+    width: 100px;
+}
+.ABOUT-US .container .row .col-6 .Curabitur{
+    text-align: left;
+    margin-left: 120px;
+    margin-top: -75px;
+}
+.ABOUT-US .container .row .col-6 span{
+  float: right;
+  color: var(--secondery-color);
+  margin-right: 40px;
+  margin-top: -40px;
+}
+.ABOUT-US .container .row .col-6 hr{
+    width: 75%;
+    float: right;
+    margin-right: 40px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+.ABOUT-US .container .row .col-6 .foot i:first-child{
+    margin-left: 220px;
+}
+.ABOUT-US .container .row .col-6 .foot i.activee{
+    color: var(--main-color);
+}
+label{
+    color: var(--secondery-color);
+}
+.DESIGN-skill{
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/images.jpg");
+    background-size: cover;
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: 150px;
+}
+.DESIGN-skill h1{
+    width: 70%;
+    color: white;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 20vh;
+    position: absolute;
+}
+.DESIGN-skill span{
+    text-align: center;
+    color: white;
+    margin-left: 600px;
+    margin-top: 35vh;
+    position: absolute;
+}
+
+/*-----------------------------------------------END ABOUT US-------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------START PRICING-----------------------------------------------*/
+
+.PRICING .container .row .col-3{
+    background-color: #fcfcfc;
+    margin-right: 13px;  
+    border-top:3px solid var(--main-color);
+   
+}
+.PRICING .container .row .col-3:first-child{
+    background-color: #fcfcfc;
+    margin-left: -50px;
+    margin-right: 10px;  
+    color: black;
+}
+.PRICING .container .row .col-3 p:first-child{
+    text-align: center;
+   
+    margin-bottom: -55px;
+   
+ }
+.PRICING .container .row .col-3 p{
+   text-align: center;
+   padding: 25px;
+   margin-bottom: -15px;
+}
+.PRICING .container .row .col-3 sup ,sub,h2{
+    display: inline-block;
+    text-align: center;
+   
+   
+   
+}
+.PRICING .container .row .col-3 sup{
+    display: inline-block;
+    text-align: center;
+    padding-left: 55px;
+    font-size: 40px;
+    font-weight: 300;
+   
+}
+.PRICING .container .row .col-3 .one{
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+   
+}
+.PRICING .container .row .col-3  sub{
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+.PRICING .container .row .col-3  .first{
+  width: 112%;
+  border-color: var(--main-color);
+  margin-left: -15px;
+}
+.PRICING .container .row .col-3  .last{
+    width: 75%;
+    border-color: var(--main-color);
+    margin-top: -25px;
+  }
+  .PRICING .container .row .col-3 .two{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    cursor: pointer;
+}
+.PRICING .container .row .col-3 .two:hover{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: var(--main-color);
+    transition: 1s;
+    cursor: pointer;
+}
+.foot-price h3{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+.foot-price .two{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+.foot-price .two:hover{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: var(--main-color);
+    transition: 1s;
+    cursor: pointer;
+}
+.earth{
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/images\ \(1\).jpg");
+    background-size: cover;
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: 150px;
+}
+.earth i{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 112px;
+}
+.earth .mail{
+    background: none;
+    height: 60px;
+    width: 450px;
+    display: inline-block;
+    border: 1px solid white;
+    border-right: none;
+    position: relative; 
+    margin-left: 100px;
+    margin-top: 15vh;
+    padding-left: 60px;
+    color: white;
+  
+}
+.earth .mail::placeholder{
+    color: white;
+    
+}
+.earth .mail:focus,.submit:focus{
+    outline: none;
+}
+.submit{
+    height: 60px;
+    display: inline-block;
+    border: 1px solid white;
+    border-left: none;
+    position: absolute;
+    margin-top: 15vh;
+    color: white;
+    background-color: var(--main-color);
+    margin-left: -102px;
+
+}
+.earth .footer{
+    display: inline-block;
+    color: var(--secondery-color);
+    margin-left: 600px;
+    margin-top: -50px;
+    position: absolute;
+}
+
+/*-----------------------------------------------END PRICING-------------------------------------------------*/
